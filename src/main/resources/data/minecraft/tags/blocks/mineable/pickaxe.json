@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "cobblestoney:andesite_cobbled",
+    "cobblestoney:diorite_cobbled",
+    "cobblestoney:granite_cecilia",
+    "cobblestoney:granite_cobbled",
+    "cobblestoney:granite_jade",
+    "cobblestoney:granite_red",
+    "cobblestoney:granite_soladite"
+  ]
+}

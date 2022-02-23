@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "": [
+            { "model": "cobblestoney:block/granite_soladite" },
+            { "model": "cobblestoney:block/granite_soladite", "y": 90 },
+            { "model": "cobblestoney:block/granite_soladite", "y": 180 },
+            { "model": "cobblestoney:block/granite_soladite", "y": 270 }
+        ]
+    }
+}
