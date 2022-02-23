@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DG",
+    "GD"
+  ],
+  "key": {
+    "D": {
+      "item": "minecraft:stone"
+    },
+    "G": {
+      "item": "minecraft:andesite"
+    }
+  },
+  "result": {
+    "item": "cobblestoney:cobbled_andesite",
+    "count": 4
+  }
+}

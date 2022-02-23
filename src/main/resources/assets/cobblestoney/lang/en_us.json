@@ -1,10 +1,15 @@
 {
-  "itemGroup.cobblestoney": "Cobbled Granite Stones",
+  "itemGroup.cobblestoney": "cobblestoney",
+  "block.cobblestoney.dirt_sand": "Sandy Dirt",
+  "block.cobblestoney.dirt_clay": "Clay Dirt",
+  "block.cobblestoney.stone_mud": "Mudstone",
+  "block.cobblestoney.stone_silt": "Siltstone",
   "block.cobblestoney.andesite_cobbled": "Cobbled Andesite",
   "block.cobblestoney.diorite_cobbled": "Cobbled Diorite",
   "block.cobblestoney.granite_jade": "Jade Granite",
   "block.cobblestoney.granite_soladite": "Soladite Granite",
   "block.cobblestoney.granite_red": "Sindoori Granite",
   "block.cobblestoney.granite_cecilia": "Cecilia Granite",
+  "block.cobblestoney.granite_pink": "Pink Granite",
   "block.cobblestoney.granite_cobbled": "Cobbled Granite"
 }

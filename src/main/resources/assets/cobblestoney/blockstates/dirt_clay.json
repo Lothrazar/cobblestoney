@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "": [
+            { "model": "cobblestoney:block/dirt_clay" },
+            { "model": "cobblestoney:block/dirt_clay", "y": 90 },
+            { "model": "cobblestoney:block/dirt_clay", "y": 180 },
+            { "model": "cobblestoney:block/dirt_clay", "y": 270 }
+        ]
+    }
+}

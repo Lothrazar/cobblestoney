@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "": [
+            { "model": "cobblestoney:block/stone_mud" }
+        ]
+    }
+}

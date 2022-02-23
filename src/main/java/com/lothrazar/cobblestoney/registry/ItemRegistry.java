@@ -26,5 +26,10 @@ public class ItemRegistry {
   public static final RegistryObject<Item> GRANITE_JADE = ITEMS.register("granite_jade", () -> new BlockItem(BlockRegistry.GRANITE_JADE.get(), new Item.Properties().tab(TAB)));
   public static final RegistryObject<Item> GRANITE_CECILIA = ITEMS.register("granite_cecilia", () -> new BlockItem(BlockRegistry.GRANITE_CECILIA.get(), new Item.Properties().tab(TAB)));
   public static final RegistryObject<Item> GRANITE_RED = ITEMS.register("granite_red", () -> new BlockItem(BlockRegistry.GRANITE_RED.get(), new Item.Properties().tab(TAB)));
+  public static final RegistryObject<Item> GRANITE_PINK = ITEMS.register("granite_pink", () -> new BlockItem(BlockRegistry.GRANITE_PINK.get(), new Item.Properties().tab(TAB)));
+  public static final RegistryObject<Item> STONE_MUD = ITEMS.register("stone_mud", () -> new BlockItem(BlockRegistry.STONE_MUD.get(), new Item.Properties().tab(TAB)));
+  public static final RegistryObject<Item> STONE_SILT = ITEMS.register("stone_silt", () -> new BlockItem(BlockRegistry.STONE_SILT.get(), new Item.Properties().tab(TAB)));
+  public static final RegistryObject<Item> DIRT_SAND = ITEMS.register("dirt_sand", () -> new BlockItem(BlockRegistry.DIRT_SAND.get(), new Item.Properties().tab(TAB)));
+  public static final RegistryObject<Item> DIRT_CLAY = ITEMS.register("dirt_clay", () -> new BlockItem(BlockRegistry.DIRT_CLAY.get(), new Item.Properties().tab(TAB)));
 
 }

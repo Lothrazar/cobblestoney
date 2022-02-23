@@ -23,5 +23,10 @@ public class BlockRegistry {
   public static final RegistryObject<Block> GRANITE_SOLADITE = BLOCKS.register("granite_soladite", () -> new Block(Block.Properties.of(Material.STONE, MaterialColor.COLOR_LIGHT_BLUE).requiresCorrectToolForDrops().strength(1.5F, 6.0F)));
   public static final RegistryObject<Block> GRANITE_CECILIA = BLOCKS.register("granite_cecilia", () -> new Block(Block.Properties.of(Material.STONE, MaterialColor.TERRACOTTA_BROWN).requiresCorrectToolForDrops().strength(1.5F, 6.0F)));
   public static final RegistryObject<Block> GRANITE_RED = BLOCKS.register("granite_red", () -> new Block(Block.Properties.of(Material.STONE, MaterialColor.COLOR_RED).requiresCorrectToolForDrops().strength(1.5F, 6.0F)));
+  public static final RegistryObject<Block> GRANITE_PINK = BLOCKS.register("granite_pink", () -> new Block(Block.Properties.of(Material.STONE, MaterialColor.COLOR_PINK).requiresCorrectToolForDrops().strength(1.5F, 6.0F)));
+  public static final RegistryObject<Block> STONE_MUD = BLOCKS.register("stone_mud", () -> new Block(Block.Properties.of(Material.STONE, MaterialColor.DIRT).requiresCorrectToolForDrops().strength(1.5F, 6.0F)));
+  public static final RegistryObject<Block> STONE_SILT = BLOCKS.register("stone_silt", () -> new Block(Block.Properties.of(Material.STONE, MaterialColor.SAND).requiresCorrectToolForDrops().strength(1.5F, 6.0F)));
+  public static final RegistryObject<Block> DIRT_SAND = BLOCKS.register("dirt_sand", () -> new Block(Block.Properties.of(Material.DIRT, MaterialColor.SAND).requiresCorrectToolForDrops().strength(1.5F, 6.0F)));
+  public static final RegistryObject<Block> DIRT_CLAY = BLOCKS.register("dirt_clay", () -> new Block(Block.Properties.of(Material.DIRT, MaterialColor.CLAY).requiresCorrectToolForDrops().strength(1.5F, 6.0F)));
 
 }
