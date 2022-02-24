@@ -2,6 +2,7 @@
   "itemGroup.cobblestoney": "cobblestoney",
   "block.cobblestoney.dirt_sand": "Sandy Dirt",
   "block.cobblestoney.dirt_clay": "Clay Dirt",
+  "block.cobblestoney.dirt_clay.tooltip": "Loam",
   "block.cobblestoney.stone_mud": "Mudstone",
   "block.cobblestoney.stone_silt": "Siltstone",
   "block.cobblestoney.andesite_cobbled": "Cobbled Andesite",
@@ -11,5 +12,6 @@
   "block.cobblestoney.granite_red": "Sindoori Granite",
   "block.cobblestoney.granite_cecilia": "Cecilia Granite",
   "block.cobblestoney.granite_pink": "Pink Granite",
+  "block.cobblestoney.granite_purple": "Mongolian Granite",
   "block.cobblestoney.granite_cobbled": "Cobbled Granite"
 }

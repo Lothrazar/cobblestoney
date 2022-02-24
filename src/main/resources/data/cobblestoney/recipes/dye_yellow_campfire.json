@@ -3,7 +3,7 @@
   "ingredient": {
     "item": "cobblestoney:granite_cecilia"
   },
-  "result": "minecraft:green_yellow",
+  "result": "minecraft:yellow_dye",
   "experience": 0.08,
   "cookingtime": 1800
 }

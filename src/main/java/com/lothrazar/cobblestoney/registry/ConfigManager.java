@@ -10,7 +10,7 @@ public class ConfigManager {
 
   private static final ForgeConfigSpec.Builder CFG = new ForgeConfigSpec.Builder();
   private static ForgeConfigSpec COMMON_CONFIG;
-  public static ForgeConfigSpec.BooleanValue JADE;
+  public static ForgeConfigSpec.BooleanValue WORLDGEN_EVENTS;
 
   static {
     initConfig();
@@ -18,7 +18,7 @@ public class ConfigManager {
 
   private static void initConfig() {
     CFG.comment("[" + CobbleyMod.MODID + "] Worldgen settings").push(CobbleyMod.MODID);
-    JADE = CFG.comment("yes go").define("jade", true);
+    WORLDGEN_EVENTS = CFG.comment("True to enable all worldgen. False means placement features are still registered but not run on any biomes/dimensions by the mod").define("cobblestoney.worldgen", true);
     CFG.pop(); // one pop for every push
     COMMON_CONFIG = CFG.build();
   }

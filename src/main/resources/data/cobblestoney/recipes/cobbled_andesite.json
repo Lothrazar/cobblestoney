@@ -6,14 +6,14 @@
   ],
   "key": {
     "D": {
-      "item": "minecraft:stone"
+      "item": "minecraft:cobblestone"
     },
     "G": {
       "item": "minecraft:andesite"
     }
   },
   "result": {
-    "item": "cobblestoney:cobbled_andesite",
+    "item": "cobblestoney:andesite_cobbled",
     "count": 4
   }
 }

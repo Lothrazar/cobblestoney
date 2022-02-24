@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "": [
+            { "model": "cobblestoney:block/granite_purple" },
+            { "model": "cobblestoney:block/granite_purple", "y": 90 },
+            { "model": "cobblestoney:block/granite_purple", "y": 180 },
+            { "model": "cobblestoney:block/granite_purple", "y": 270 }
+        ]
+    }
+}

@@ -65,40 +65,86 @@ public class FeatureRegistry {
       Feature.ORE.configured(new OreConfiguration(
           List.of(OreConfiguration.target(NATURAL_STONE, BlockRegistry.GRANITE_CECILIA.get().defaultBlockState())
               , OreConfiguration.target(DEEP_STONE, BlockRegistry.GRANITE_CECILIA.get().defaultBlockState())), 64)));
+  //granite_pink
+  public static final ConfiguredFeature<?, ?> ORE_GRANITE_PINK = FeatureUtils.register("ore_granite_pink",
+      Feature.ORE.configured(new OreConfiguration(
+          List.of(OreConfiguration.target(NATURAL_STONE, BlockRegistry.GRANITE_PINK.get().defaultBlockState())
+              , OreConfiguration.target(DEEP_STONE, BlockRegistry.GRANITE_PINK.get().defaultBlockState())), 16)));
+  public static final ConfiguredFeature<?, ?> ORE_GRANITE_PURP = FeatureUtils.register("ore_granite_purple",
+      Feature.ORE.configured(new OreConfiguration(
+          List.of(OreConfiguration.target(NATURAL_STONE, BlockRegistry.GRANITE_PURPLE.get().defaultBlockState())
+              , OreConfiguration.target(DEEP_STONE, BlockRegistry.GRANITE_PURPLE.get().defaultBlockState())), 16)));
+  //stone_mud
+  public static final ConfiguredFeature<?, ?> ORE_MUDSTONE = FeatureUtils.register("ore_stone_mud",
+      Feature.ORE.configured(new OreConfiguration(
+          List.of(OreConfiguration.target(NATURAL_STONE, BlockRegistry.STONE_MUD.get().defaultBlockState())
+              , OreConfiguration.target(DEEP_STONE, BlockRegistry.STONE_MUD.get().defaultBlockState())), 16)));
+  //stone_silt
+  public static final ConfiguredFeature<?, ?> ORE_STONE_SILT = FeatureUtils.register("ore_stone_silt",
+      Feature.ORE.configured(new OreConfiguration(
+          List.of(OreConfiguration.target(NATURAL_STONE, BlockRegistry.STONE_SILT.get().defaultBlockState())
+              , OreConfiguration.target(DEEP_STONE, BlockRegistry.STONE_SILT.get().defaultBlockState())), 16)));
+  //dirt_sand
+  public static final ConfiguredFeature<?, ?> ORE_DIRT_SAND = FeatureUtils.register("ore_dirt_sand",
+      Feature.ORE.configured(new OreConfiguration(NATURAL_STONE, BlockRegistry.DIRT_SAND.get().defaultBlockState(), 16)));
+  //dirt_clay
+  public static final ConfiguredFeature<?, ?> ORE_DIRT_CLAY = FeatureUtils.register("ore_dirt_clay",
+      Feature.ORE.configured(new OreConfiguration(NATURAL_STONE, BlockRegistry.DIRT_CLAY.get().defaultBlockState(), 8)));
   // placed features
   //
   public static final PlacedFeature ORE_JADE_UPPER = PlacementUtils.register("ore_granite_jade_upper",
-      FeatureRegistry.ORE_JADE.placed(rareOrePlacement(1, HeightRangePlacement.uniform(VerticalAnchor.absolute(64), VerticalAnchor.absolute(128)))));
+      FeatureRegistry.ORE_JADE.placed(rareOrePlacement(2, HeightRangePlacement.uniform(VerticalAnchor.bottom(), VerticalAnchor.absolute(128)))));
   public static final PlacedFeature ORE_JADE_LOWER = PlacementUtils.register("ore_granite_jade_lower",
-      FeatureRegistry.ORE_JADE.placed(commonOrePlacement(2, HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(60)))));
+      FeatureRegistry.ORE_JADE.placed(commonOrePlacement(4, HeightRangePlacement.uniform(VerticalAnchor.bottom(), VerticalAnchor.absolute(60)))));
   //
   public static final PlacedFeature ORE_FROZEN_UPPER = PlacementUtils.register("ore_granite_soladite_upper",
-      FeatureRegistry.ORE_GRANITE_SOLADITE.placed(rareOrePlacement(6, HeightRangePlacement.uniform(VerticalAnchor.absolute(64), VerticalAnchor.absolute(128)))));
+      FeatureRegistry.ORE_GRANITE_SOLADITE.placed(rareOrePlacement(6, HeightRangePlacement.uniform(VerticalAnchor.bottom(), VerticalAnchor.absolute(128)))));
   public static final PlacedFeature ORE_FROZEN_LOWER = PlacementUtils.register("ore_granite_soladite_lower",
-      FeatureRegistry.ORE_GRANITE_SOLADITE.placed(commonOrePlacement(2, HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(60)))));
+      FeatureRegistry.ORE_GRANITE_SOLADITE.placed(commonOrePlacement(2, HeightRangePlacement.uniform(VerticalAnchor.bottom(), VerticalAnchor.absolute(60)))));
   //
   public static final PlacedFeature ORE_DIORITE_UPPER = PlacementUtils.register("ore_diorite_upper",
-      FeatureRegistry.ORE_DIORITE_COBBLED.placed(rareOrePlacement(9, HeightRangePlacement.uniform(VerticalAnchor.absolute(64), VerticalAnchor.absolute(128)))));
+      FeatureRegistry.ORE_DIORITE_COBBLED.placed(rareOrePlacement(5, HeightRangePlacement.uniform(VerticalAnchor.bottom(), VerticalAnchor.absolute(128)))));
   public static final PlacedFeature ORE_DIORITE_LOWER = PlacementUtils.register("ore_diorite_lower",
-      FeatureRegistry.ORE_DIORITE_COBBLED.placed(commonOrePlacement(2, HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(60)))));
+      FeatureRegistry.ORE_DIORITE_COBBLED.placed(commonOrePlacement(2, HeightRangePlacement.uniform(VerticalAnchor.bottom(), VerticalAnchor.absolute(60)))));
   //
   public static final PlacedFeature ORE_ANDESITE_UPPER = PlacementUtils.register("ore_andesite_upper",
-      FeatureRegistry.ORE_ANDESITE_COBBLED.placed(rareOrePlacement(6, HeightRangePlacement.uniform(VerticalAnchor.absolute(64), VerticalAnchor.absolute(128)))));
+      FeatureRegistry.ORE_ANDESITE_COBBLED.placed(rareOrePlacement(6, HeightRangePlacement.uniform(VerticalAnchor.bottom(), VerticalAnchor.absolute(128)))));
   public static final PlacedFeature ORE_ANDESITE_LOWER = PlacementUtils.register("ore_andesite_lower",
-      FeatureRegistry.ORE_ANDESITE_COBBLED.placed(commonOrePlacement(2, HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(60)))));
+      FeatureRegistry.ORE_ANDESITE_COBBLED.placed(commonOrePlacement(2, HeightRangePlacement.uniform(VerticalAnchor.bottom(), VerticalAnchor.top()))));
   //
   public static final PlacedFeature ORE_GRANITE_UPPER = PlacementUtils.register("ore_granite_upper",
-      FeatureRegistry.ORE_GRANITE_COBBLED.placed(rareOrePlacement(6, HeightRangePlacement.uniform(VerticalAnchor.absolute(64), VerticalAnchor.absolute(128)))));
+      FeatureRegistry.ORE_GRANITE_COBBLED.placed(rareOrePlacement(6, HeightRangePlacement.uniform(VerticalAnchor.bottom(), VerticalAnchor.absolute(128)))));
   public static final PlacedFeature ORE_GRANITE_LOWER = PlacementUtils.register("ore_granite_lower",
-      FeatureRegistry.ORE_GRANITE_COBBLED.placed(commonOrePlacement(2, HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(60)))));
+      FeatureRegistry.ORE_GRANITE_COBBLED.placed(commonOrePlacement(2, HeightRangePlacement.uniform(VerticalAnchor.bottom(), VerticalAnchor.top()))));
   //
   public static final PlacedFeature ORE_RED_UPPER = PlacementUtils.register("ore_granite_red_upper",
-      FeatureRegistry.ORE_RED.placed(rareOrePlacement(6, HeightRangePlacement.uniform(VerticalAnchor.absolute(16), VerticalAnchor.absolute(64)))));
+      FeatureRegistry.ORE_RED.placed(rareOrePlacement(6, HeightRangePlacement.uniform(VerticalAnchor.bottom(), VerticalAnchor.absolute(64)))));
   public static final PlacedFeature ORE_RED_LOWER = PlacementUtils.register("ore_granite_red_lower",
-      FeatureRegistry.ORE_RED.placed(commonOrePlacement(2, HeightRangePlacement.uniform(VerticalAnchor.absolute(-128), VerticalAnchor.absolute(32)))));
+      FeatureRegistry.ORE_RED.placed(commonOrePlacement(2, HeightRangePlacement.uniform(VerticalAnchor.bottom(), VerticalAnchor.absolute(32)))));
   //
-  public static final PlacedFeature ORE_CELICIA_UPPER = PlacementUtils.register("ore_granite_cecilia_upper",
-      FeatureRegistry.ORE_CECILIA.placed(rareOrePlacement(6, HeightRangePlacement.uniform(VerticalAnchor.absolute(64), VerticalAnchor.absolute(128)))));
-  public static final PlacedFeature ORE_CELICIA_LOWER = PlacementUtils.register("ore_granite_cecilia_lower",
-      FeatureRegistry.ORE_CECILIA.placed(commonOrePlacement(2, HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(60)))));
+  public static final PlacedFeature ORE_CECILIA_UPPER = PlacementUtils.register("ore_granite_cecilia_upper",
+      FeatureRegistry.ORE_CECILIA.placed(rareOrePlacement(6, HeightRangePlacement.uniform(VerticalAnchor.bottom(), VerticalAnchor.absolute(128)))));
+  public static final PlacedFeature ORE_CECILIA_LOWER = PlacementUtils.register("ore_granite_cecilia_lower",
+      FeatureRegistry.ORE_CECILIA.placed(rareOrePlacement(2, HeightRangePlacement.uniform(VerticalAnchor.bottom(), VerticalAnchor.absolute(60)))));
+  //granite_pink
+  public static final PlacedFeature ORE_PINK_UPPER = PlacementUtils.register("ore_granite_pink_upper",
+      FeatureRegistry.ORE_GRANITE_PINK.placed(rareOrePlacement(6, HeightRangePlacement.uniform(VerticalAnchor.bottom(), VerticalAnchor.absolute(128)))));
+  public static final PlacedFeature ORE_PINK_LOWER = PlacementUtils.register("ore_granite_pink_lower",
+      FeatureRegistry.ORE_GRANITE_PINK.placed(commonOrePlacement(2, HeightRangePlacement.uniform(VerticalAnchor.bottom(), VerticalAnchor.top()))));
+  public static final PlacedFeature ORE_PURPLE_UPPER = PlacementUtils.register("ore_granite_purple_upper",
+      FeatureRegistry.ORE_GRANITE_PURP.placed(rareOrePlacement(6, HeightRangePlacement.uniform(VerticalAnchor.bottom(), VerticalAnchor.absolute(128)))));
+  public static final PlacedFeature ORE_PURPLE_LOWER = PlacementUtils.register("ore_granite_purple_lower",
+      FeatureRegistry.ORE_GRANITE_PURP.placed(commonOrePlacement(2, HeightRangePlacement.uniform(VerticalAnchor.bottom(), VerticalAnchor.top()))));
+  //  stone_mud
+  public static final PlacedFeature ORE_STONE_MUD = PlacementUtils.register("ore_stone_mud",
+      FeatureRegistry.ORE_MUDSTONE.placed(commonOrePlacement(6, HeightRangePlacement.uniform(VerticalAnchor.bottom(), VerticalAnchor.top()))));
+  //  stone_silt
+  public static final PlacedFeature ORE_STONESILT = PlacementUtils.register("ore_stone_silt",
+      FeatureRegistry.ORE_STONE_SILT.placed(commonOrePlacement(6, HeightRangePlacement.uniform(VerticalAnchor.bottom(), VerticalAnchor.top()))));
+  //      dirt_sand
+  public static final PlacedFeature ORE_DIRTSAND = PlacementUtils.register("ore_dirt_sand",
+      FeatureRegistry.ORE_DIRT_SAND.placed(commonOrePlacement(8, HeightRangePlacement.uniform(VerticalAnchor.bottom(), VerticalAnchor.top()))));
+  //  dirt_clay
+  public static final PlacedFeature ORE_DIRTCLAY = PlacementUtils.register("ore_dirt_clay",
+      FeatureRegistry.ORE_DIRT_CLAY.placed(commonOrePlacement(8, HeightRangePlacement.uniform(VerticalAnchor.bottom(), VerticalAnchor.top()))));
 }
