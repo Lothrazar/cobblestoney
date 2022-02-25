@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DG",
+    "GD"
+  ],
+  "key": {
+    "D": {
+      "item": "minecraft:cobblestone"
+    },
+    "G": {
+      "item": "minecraft:tuff"
+    }
+  },
+  "result": {
+    "item": "cobblestoney:tuff_cobbled",
+    "count": 4
+  }
+}

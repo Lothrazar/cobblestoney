@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "cobblestoney:tuff_cobbled"
+          "name": "cobblestoney:clay_sand"
         }
       ],
       "conditions": [

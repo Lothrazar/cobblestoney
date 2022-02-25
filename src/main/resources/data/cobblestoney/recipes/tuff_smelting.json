@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smelting",
   "ingredient": {
-    "item": "cobblestoney:tuff_andesite"
+    "item": "cobblestoney:tuff_cobbled"
   },
   "result": "minecraft:tuff",
   "experience": 0.1,

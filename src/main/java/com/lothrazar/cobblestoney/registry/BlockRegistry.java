@@ -16,8 +16,8 @@ public class BlockRegistry {
 
   public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, CobbleyMod.MODID);
   public static final RegistryObject<Block> DRIPSTONE_COBBLED = BLOCKS.register("dripstone_cobbled", () -> new Block(Block.Properties.of(Material.STONE, MaterialColor.TERRACOTTA_BROWN).sound(SoundType.DRIPSTONE_BLOCK).requiresCorrectToolForDrops().strength(1.5F, 1.0F)));
-  public static final RegistryObject<Block> CALCITE_COBBLED = BLOCKS.register("calcite_cobbled", () -> new Block(Block.Properties.of(Material.STONE, MaterialColor.COLOR_LIGHT_GRAY).requiresCorrectToolForDrops().strength(0.75F)));
-  public static final RegistryObject<Block> TUFF_COBBLED = BLOCKS.register("tuff_cobbled", () -> new Block(Block.Properties.of(Material.STONE, MaterialColor.COLOR_GRAY).requiresCorrectToolForDrops().strength(1.5F, 6.0F)));
+  public static final RegistryObject<Block> CALCITE_COBBLED = BLOCKS.register("calcite_cobbled", () -> new Block(Block.Properties.of(Material.STONE, MaterialColor.COLOR_LIGHT_GRAY).sound(SoundType.CALCITE).requiresCorrectToolForDrops().strength(0.75F)));
+  public static final RegistryObject<Block> TUFF_COBBLED = BLOCKS.register("tuff_cobbled", () -> new Block(Block.Properties.of(Material.STONE, MaterialColor.COLOR_GRAY).sound(SoundType.TUFF).requiresCorrectToolForDrops().strength(1.5F, 6.0F)));
   public static final RegistryObject<Block> DIORITE_COBBLED = BLOCKS.register("diorite_cobbled", () -> new Block(Block.Properties.of(Material.STONE, MaterialColor.COLOR_LIGHT_GRAY).requiresCorrectToolForDrops().strength(1.5F, 6.0F)));
   public static final RegistryObject<Block> ANDESITE_COBBLED = BLOCKS.register("andesite_cobbled", () -> new Block(Block.Properties.of(Material.STONE, MaterialColor.COLOR_GRAY).requiresCorrectToolForDrops().strength(1.5F, 6.0F)));
   public static final RegistryObject<Block> GRANITE_COBBLED = BLOCKS.register("granite_cobbled", () -> new Block(Block.Properties.of(Material.STONE, MaterialColor.DIRT).requiresCorrectToolForDrops().strength(1.5F, 6.0F)));
@@ -27,13 +27,14 @@ public class BlockRegistry {
   public static final RegistryObject<Block> GRANITE_RED = BLOCKS.register("granite_red", () -> new Block(Block.Properties.of(Material.STONE, MaterialColor.COLOR_RED).requiresCorrectToolForDrops().strength(1.5F, 6.0F)));
   public static final RegistryObject<Block> GRANITE_PINK = BLOCKS.register("granite_pink", () -> new Block(Block.Properties.of(Material.STONE, MaterialColor.COLOR_PINK).requiresCorrectToolForDrops().strength(1.5F, 6.0F)));
   public static final RegistryObject<Block> GRANITE_PURPLE = BLOCKS.register("granite_purple", () -> new Block(Block.Properties.of(Material.STONE, MaterialColor.COLOR_PURPLE).requiresCorrectToolForDrops().strength(1.5F, 6.0F)));
-  public static final RegistryObject<Block> STONE_MUD = BLOCKS.register("stone_mud", () -> new Block(Block.Properties.of(Material.STONE, MaterialColor.DIRT).requiresCorrectToolForDrops().strength(1.2F, 4.0F)));
-  public static final RegistryObject<Block> STONE_SILT = BLOCKS.register("stone_silt", () -> new Block(Block.Properties.of(Material.STONE, MaterialColor.SAND).requiresCorrectToolForDrops().strength(1.2F, 4.0F)));
-  public static final RegistryObject<Block> DIRT_SAND = BLOCKS.register("dirt_sand", () -> new Block(Block.Properties.of(Material.DIRT, MaterialColor.SAND).requiresCorrectToolForDrops().strength(0.6F).sound(SoundType.SAND)));
-  public static final RegistryObject<Block> DIRT_CLAY = BLOCKS.register("dirt_clay", () -> new Block(Block.Properties.of(Material.DIRT, MaterialColor.CLAY).requiresCorrectToolForDrops().strength(0.6F).sound(SoundType.SAND)));
-  public static final RegistryObject<Block> CLAY_SAND = BLOCKS.register("clay_sand", () -> new Block(Block.Properties.of(Material.DIRT, MaterialColor.CLAY).requiresCorrectToolForDrops().strength(0.6F).sound(SoundType.SAND)));
-  public static final RegistryObject<Block> CLAY_SILT = BLOCKS.register("clay_silt", () -> new Block(Block.Properties.of(Material.DIRT, MaterialColor.CLAY).requiresCorrectToolForDrops().strength(0.6F).sound(SoundType.SAND)));//variants for wyld
-  public static final RegistryObject<Block> LOAM = BLOCKS.register("loam", () -> new Block(Block.Properties.of(Material.DIRT, MaterialColor.CLAY).requiresCorrectToolForDrops().strength(0.6F).sound(SoundType.SAND)));//loam for cpw
-  public static final RegistryObject<Block> MUD = BLOCKS.register("mud", () -> new Block(Block.Properties.of(Material.DIRT, MaterialColor.CLAY).requiresCorrectToolForDrops().strength(0.6F).sound(SoundType.SAND)));//mud for soaryn
+  public static final RegistryObject<Block> STONE_SILT = BLOCKS.register("stone_silt", () -> new Block(Block.Properties.of(Material.STONE, MaterialColor.SAND).sound(SoundType.BASALT).requiresCorrectToolForDrops().strength(1.2F, 4.0F)));
+  public static final RegistryObject<Block> STONE_MUD = BLOCKS.register("stone_mud", () -> new Block(Block.Properties.of(Material.DIRT, MaterialColor.DIRT).sound(SoundType.NETHERRACK).requiresCorrectToolForDrops().strength(1.9F, 4.0F)));
+  public static final RegistryObject<Block> DIRT_SAND = BLOCKS.register("dirt_sand", () -> new Block(Block.Properties.of(Material.DIRT, MaterialColor.SAND).requiresCorrectToolForDrops().strength(0.3F).sound(SoundType.SOUL_SAND)));
+  public static final RegistryObject<Block> DIRT_CLAY = BLOCKS.register("dirt_clay", () -> new Block(Block.Properties.of(Material.DIRT, MaterialColor.CLAY).requiresCorrectToolForDrops().strength(0.7F).sound(SoundType.GRAVEL)));
+  public static final RegistryObject<Block> CLAY_SAND = BLOCKS.register("clay_sand", () -> new Block(Block.Properties.of(Material.DIRT, MaterialColor.CLAY).requiresCorrectToolForDrops().strength(0.6F).sound(SoundType.GRAVEL)));
+  public static final RegistryObject<Block> CLAY_SILT = BLOCKS.register("clay_silt", () -> new Block(Block.Properties.of(Material.DIRT, MaterialColor.CLAY).requiresCorrectToolForDrops().strength(0.9F).sound(SoundType.SAND)));//variants for wyld
 
+  //slimy_stone
+//LOAM/weather/
+// SILT ?
 }

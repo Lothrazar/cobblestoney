@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "": [
+            { "model": "cobblestoney:block/clay_sand" },
+            { "model": "cobblestoney:block/clay_sand", "y": 90 },
+            { "model": "cobblestoney:block/clay_sand", "y": 180 },
+            { "model": "cobblestoney:block/clay_sand", "y": 270 }
+        ]
+    }
+}

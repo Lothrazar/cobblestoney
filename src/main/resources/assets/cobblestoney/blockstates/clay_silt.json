@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "": [
+            { "model": "cobblestoney:block/clay_silt" },
+            { "model": "cobblestoney:block/clay_silt", "y": 90 },
+            { "model": "cobblestoney:block/clay_silt", "y": 180 },
+            { "model": "cobblestoney:block/clay_silt", "y": 270 }
+        ]
+    }
+}

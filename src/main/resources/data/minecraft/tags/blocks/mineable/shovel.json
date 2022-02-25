@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
+    "cobblestoney:clay_sand",
+    "cobblestoney:stone_mud",
+    "cobblestoney:clay_silt",
     "cobblestoney:dirt_clay",
     "cobblestoney:dirt_sand"
   ]
