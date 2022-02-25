@@ -19,6 +19,9 @@ public class ItemRegistry {
   };
   public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, CobbleyMod.MODID);
 
+  public static final RegistryObject<Item> DRIPSTONE_COBBLED = ITEMS.register("dripstone_cobbled", () -> new BlockItem(BlockRegistry.DRIPSTONE_COBBLED.get(), new Item.Properties().tab(TAB)));
+  public static final RegistryObject<Item> CALCITE_COBBLED = ITEMS.register("calcite_cobbled", () -> new BlockItem(BlockRegistry.CALCITE_COBBLED.get(), new Item.Properties().tab(TAB)));
+  public static final RegistryObject<Item> TUFF_COBBLED = ITEMS.register("tuff_cobbled", () -> new BlockItem(BlockRegistry.TUFF_COBBLED.get(), new Item.Properties().tab(TAB)));
   public static final RegistryObject<Item> DIORITE_COBBLED = ITEMS.register("diorite_cobbled", () -> new BlockItem(BlockRegistry.DIORITE_COBBLED.get(), new Item.Properties().tab(TAB)));
   public static final RegistryObject<Item> ANDESITE_COBBLED = ITEMS.register("andesite_cobbled", () -> new BlockItem(BlockRegistry.ANDESITE_COBBLED.get(), new Item.Properties().tab(TAB)));
   public static final RegistryObject<Item> GRANITE_COBBLED = ITEMS.register("granite_cobbled", () -> new BlockItem(BlockRegistry.GRANITE_COBBLED.get(), new Item.Properties().tab(TAB)));
@@ -32,5 +35,9 @@ public class ItemRegistry {
   public static final RegistryObject<Item> STONE_SILT = ITEMS.register("stone_silt", () -> new BlockItem(BlockRegistry.STONE_SILT.get(), new Item.Properties().tab(TAB)));
   public static final RegistryObject<Item> DIRT_SAND = ITEMS.register("dirt_sand", () -> new BlockItem(BlockRegistry.DIRT_SAND.get(), new Item.Properties().tab(TAB)));
   public static final RegistryObject<Item> DIRT_CLAY = ITEMS.register("dirt_clay", () -> new BlockItem(BlockRegistry.DIRT_CLAY.get(), new Item.Properties().tab(TAB)));
+  public static final RegistryObject<Item> CLAY_SAND = ITEMS.register("clay_sand", () -> new BlockItem(BlockRegistry.CLAY_SAND.get(), new Item.Properties().tab(TAB)));
+  public static final RegistryObject<Item> CLAY_SILT = ITEMS.register("clay_silt", () -> new BlockItem(BlockRegistry.CLAY_SILT.get(), new Item.Properties().tab(TAB)));
+  public static final RegistryObject<Item> LOAM = ITEMS.register("loam", () -> new BlockItem(BlockRegistry.LOAM.get(), new Item.Properties().tab(TAB)));
+  public static final RegistryObject<Item> MUD = ITEMS.register("mud", () -> new BlockItem(BlockRegistry.MUD.get(), new Item.Properties().tab(TAB)));
 
 }

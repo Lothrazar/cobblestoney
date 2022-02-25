@@ -3,7 +3,7 @@
   "ingredient": {
     "item": "cobblestoney:granite_purple"
   },
-  "result": "minecraft:purple_dye",
+  "result": "minecraft:magenta_dye",
   "experience": 0.08,
   "cookingtime": 1200
 }

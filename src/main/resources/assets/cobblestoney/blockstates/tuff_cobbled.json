@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "": [
+            { "model": "cobblestoney:block/tuff_cobbled" },
+            { "model": "cobblestoney:block/tuff_cobbled", "y": 90 },
+            { "model": "cobblestoney:block/tuff_cobbled", "y": 180 },
+            { "model": "cobblestoney:block/tuff_cobbled", "y": 270 }
+        ]
+    }
+}

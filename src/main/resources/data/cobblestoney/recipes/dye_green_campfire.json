@@ -3,7 +3,7 @@
   "ingredient": {
     "item": "cobblestoney:granite_jade"
   },
-  "result": "minecraft:green_dye",
+  "result": "minecraft:lime_dye",
   "experience": 0.08,
   "cookingtime": 1200
 }

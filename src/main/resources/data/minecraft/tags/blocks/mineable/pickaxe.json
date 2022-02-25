@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
+    "cobblestoney:dripstone_cobbled",
+    "cobblestoney:tuff_cobbled",
+    "cobblestoney:calcite_cobbled",
     "cobblestoney:andesite_cobbled",
     "cobblestoney:diorite_cobbled",
     "cobblestoney:granite_cecilia",
