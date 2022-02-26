@@ -34,8 +34,19 @@ public class FeatureRegistry {
 
   private static final RuleTest NATURAL_STONE = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
   private static final RuleTest DEEP_STONE = new TagMatchTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
-  //
 
+  public static final ConfiguredFeature<?, ?> ORE_CALCITE_COBBLED = FeatureUtils.register("ore_calcite_cobbled",
+      Feature.ORE.configured(new OreConfiguration(
+          List.of(OreConfiguration.target(NATURAL_STONE, BlockRegistry.CALCITE_COBBLED.get().defaultBlockState())
+              , OreConfiguration.target(DEEP_STONE, BlockRegistry.CALCITE_COBBLED.get().defaultBlockState())), 16)));
+  public static final ConfiguredFeature<?, ?> ORE_DRIPSTONE_COBBLED = FeatureUtils.register("ore_dripstone_cobbled",
+      Feature.ORE.configured(new OreConfiguration(
+          List.of(OreConfiguration.target(NATURAL_STONE, BlockRegistry.DRIPSTONE_COBBLED.get().defaultBlockState())
+              , OreConfiguration.target(DEEP_STONE, BlockRegistry.DRIPSTONE_COBBLED.get().defaultBlockState())), 16)));
+  public static final ConfiguredFeature<?, ?> ORE_TUFF_COBBLED = FeatureUtils.register("ore_tuff_cobbled",
+      Feature.ORE.configured(new OreConfiguration(
+          List.of(OreConfiguration.target(NATURAL_STONE, BlockRegistry.TUFF_COBBLED.get().defaultBlockState())
+              , OreConfiguration.target(DEEP_STONE, BlockRegistry.TUFF_COBBLED.get().defaultBlockState())), 16)));
   //registered features
   public static final ConfiguredFeature<?, ?> ORE_JADE = FeatureUtils.register("ore_granite_jade",
       Feature.ORE.configured(new OreConfiguration(
@@ -90,6 +101,10 @@ public class FeatureRegistry {
   //dirt_clay
   public static final ConfiguredFeature<?, ?> ORE_DIRT_CLAY = FeatureUtils.register("ore_dirt_clay",
       Feature.ORE.configured(new OreConfiguration(NATURAL_STONE, BlockRegistry.DIRT_CLAY.get().defaultBlockState(), 8)));
+  public static final ConfiguredFeature<?, ?> ORE_CLAY_SAND = FeatureUtils.register("ore_clay_sand",
+      Feature.ORE.configured(new OreConfiguration(NATURAL_STONE, BlockRegistry.CLAY_SAND.get().defaultBlockState(), 4)));
+  public static final ConfiguredFeature<?, ?> ORE_CLAY_SILT = FeatureUtils.register("ore_clay_silt",
+      Feature.ORE.configured(new OreConfiguration(NATURAL_STONE, BlockRegistry.CLAY_SILT.get().defaultBlockState(), 4)));
   // placed features
   //
   public static final PlacedFeature ORE_JADE_UPPER = PlacementUtils.register("ore_granite_jade_upper",
@@ -141,10 +156,21 @@ public class FeatureRegistry {
   //  stone_silt
   public static final PlacedFeature ORE_STONESILT = PlacementUtils.register("ore_stone_silt",
       FeatureRegistry.ORE_STONE_SILT.placed(commonOrePlacement(6, HeightRangePlacement.uniform(VerticalAnchor.bottom(), VerticalAnchor.top()))));
-  //      dirt_sand
+  //      dirt types
   public static final PlacedFeature ORE_DIRTSAND = PlacementUtils.register("ore_dirt_sand",
       FeatureRegistry.ORE_DIRT_SAND.placed(commonOrePlacement(8, HeightRangePlacement.uniform(VerticalAnchor.bottom(), VerticalAnchor.top()))));
-  //  dirt_clay
   public static final PlacedFeature ORE_DIRTCLAY = PlacementUtils.register("ore_dirt_clay",
       FeatureRegistry.ORE_DIRT_CLAY.placed(commonOrePlacement(8, HeightRangePlacement.uniform(VerticalAnchor.bottom(), VerticalAnchor.top()))));
+  public static final PlacedFeature ORE_CLAYSAND = PlacementUtils.register("ore_clay_sand",
+      FeatureRegistry.ORE_CLAY_SAND.placed(commonOrePlacement(8, HeightRangePlacement.uniform(VerticalAnchor.bottom(), VerticalAnchor.top()))));
+  public static final PlacedFeature ORE_CLAYSILT = PlacementUtils.register("ore_clay_silt",
+      FeatureRegistry.ORE_CLAY_SILT.placed(commonOrePlacement(8, HeightRangePlacement.uniform(VerticalAnchor.bottom(), VerticalAnchor.top()))));
+  //
+  public static final PlacedFeature ORE_CALCITE = PlacementUtils.register("ore_calcite_cobbled",
+      FeatureRegistry.ORE_CALCITE_COBBLED.placed(commonOrePlacement(8, HeightRangePlacement.uniform(VerticalAnchor.bottom(), VerticalAnchor.top()))));
+  public static final PlacedFeature ORE_DRIPSTONE = PlacementUtils.register("ore_dripstone_cobbled",
+      FeatureRegistry.ORE_DRIPSTONE_COBBLED.placed(commonOrePlacement(8, HeightRangePlacement.uniform(VerticalAnchor.bottom(), VerticalAnchor.top()))));
+  public static final PlacedFeature ORE_TUFF = PlacementUtils.register("ore_tuff_cobbled",
+      FeatureRegistry.ORE_TUFF_COBBLED.placed(commonOrePlacement(8, HeightRangePlacement.uniform(VerticalAnchor.bottom(), VerticalAnchor.top()))));
+
 }

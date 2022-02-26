@@ -32,9 +32,5 @@ public class BlockRegistry {
   public static final RegistryObject<Block> DIRT_SAND = BLOCKS.register("dirt_sand", () -> new Block(Block.Properties.of(Material.DIRT, MaterialColor.SAND).requiresCorrectToolForDrops().strength(0.3F).sound(SoundType.SOUL_SAND)));
   public static final RegistryObject<Block> DIRT_CLAY = BLOCKS.register("dirt_clay", () -> new Block(Block.Properties.of(Material.DIRT, MaterialColor.CLAY).requiresCorrectToolForDrops().strength(0.7F).sound(SoundType.GRAVEL)));
   public static final RegistryObject<Block> CLAY_SAND = BLOCKS.register("clay_sand", () -> new Block(Block.Properties.of(Material.DIRT, MaterialColor.CLAY).requiresCorrectToolForDrops().strength(0.6F).sound(SoundType.GRAVEL)));
-  public static final RegistryObject<Block> CLAY_SILT = BLOCKS.register("clay_silt", () -> new Block(Block.Properties.of(Material.DIRT, MaterialColor.CLAY).requiresCorrectToolForDrops().strength(0.9F).sound(SoundType.SAND)));//variants for wyld
-
-  //slimy_stone
-//LOAM/weather/
-// SILT ?
+  public static final RegistryObject<Block> CLAY_SILT = BLOCKS.register("clay_silt", () -> new Block(Block.Properties.of(Material.DIRT, MaterialColor.CLAY).requiresCorrectToolForDrops().strength(0.9F).sound(SoundType.SAND)));
 }

@@ -45,6 +45,11 @@ public class GraniteWorldgenEvents {
       builder.addFeature(GenerationStep.Decoration.LOCAL_MODIFICATIONS, FeatureRegistry.ORE_STONESILT);
       builder.addFeature(GenerationStep.Decoration.LOCAL_MODIFICATIONS, FeatureRegistry.ORE_DIRTSAND);
       builder.addFeature(GenerationStep.Decoration.LOCAL_MODIFICATIONS, FeatureRegistry.ORE_DIRTCLAY);
+      builder.addFeature(GenerationStep.Decoration.LOCAL_MODIFICATIONS, FeatureRegistry.ORE_CLAYSAND);
+      builder.addFeature(GenerationStep.Decoration.LOCAL_MODIFICATIONS, FeatureRegistry.ORE_CLAYSILT);
+      builder.addFeature(GenerationStep.Decoration.LOCAL_MODIFICATIONS, FeatureRegistry.ORE_TUFF);
+      builder.addFeature(GenerationStep.Decoration.LOCAL_MODIFICATIONS, FeatureRegistry.ORE_DRIPSTONE);
+      builder.addFeature(GenerationStep.Decoration.LOCAL_MODIFICATIONS, FeatureRegistry.ORE_CALCITE);
     }
     if (BiomeDictionary.hasType(key, BiomeDictionary.Type.NETHER)) {
 //      builder.addFeature(GenerationStep.Decoration.LOCAL_MODIFICATIONS, FeatureRegistry.ORE_RED_LOWER);

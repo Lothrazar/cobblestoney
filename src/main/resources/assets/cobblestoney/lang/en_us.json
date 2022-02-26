@@ -1,7 +1,8 @@
 {
   "itemGroup.cobblestoney": "cobblestoney",
-  "block.cobblestoney.loam": "Loam",
-  "block.cobblestoney.mud": "Mud",
+  "item.cobblestoney.loam": "Loam",
+  "item.cobblestoney.mud": "Mud",
+  "item.cobblestoney.silt": "Silt",
   "block.cobblestoney.clay_silt": "Silty Clay",
   "block.cobblestoney.clay_sand": "Sandy Clay",
   "block.cobblestoney.dirt_sand": "Sandy Dirt",
