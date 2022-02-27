@@ -1,19 +1,15 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "DG",
-    "GD"
-  ],
-  "key": {
-    "D": {
-      "item": "minecraft:dirt"
-    },
-    "G": {
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
       "item": "minecraft:sand"
+    },
+    {
+      "item": "minecraft:dirt"
     }
-  },
+  ],
   "result": {
     "item": "cobblestoney:dirt_sand",
-    "count": 4
+    "count": 2
   }
 }

@@ -6,14 +6,14 @@
   ],
   "key": {
     "D": {
-      "item": "minecraft:cobblestone"
+      "item": "cobblestoney:mud"
     },
     "G": {
-      "item": "minecraft:granite"
+      "item": "minecraft:gravel"
     }
   },
   "result": {
-    "item": "cobblestoney:granite_cobbled",
-    "count": 4
+    "item": "minecraft:coarse_dirt",
+    "count": 3
   }
 }

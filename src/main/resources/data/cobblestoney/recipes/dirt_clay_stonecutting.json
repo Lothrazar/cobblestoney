@@ -1,8 +1,8 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": {
-    "item": "cobblestoney:clay_silt"
+    "item": "cobblestoney:dirt_clay"
   },
-  "result": "cobblestoney:silt",
+  "result": "cobblestoney:loam",
   "count": 1
 }

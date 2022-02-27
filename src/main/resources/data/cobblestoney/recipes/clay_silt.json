@@ -9,11 +9,11 @@
       "item": "cobblestoney:silt"
     },
     "G": {
-      "item": "minecraft:clay"
+      "item": "minecraft:clay_ball"
     }
   },
   "result": {
     "item": "cobblestoney:clay_silt",
-    "count": 4
+    "count": 3
   }
 }

@@ -28,18 +28,17 @@
               "name": "cobblestoney:dirt_clay"
             },
             {
-              "type": "minecraft:item",
-              "functions": [
+              "type": "group",
+              "children": [
                 {
-                  "function": "minecraft:set_count",
-                  "count": 2.0,
-                  "add": false
+                  "type": "minecraft:item",
+                  "name": "cobblestoney:mud"
                 },
                 {
-                  "function": "minecraft:explosion_decay"
+                  "type": "minecraft:item",
+                  "name": "cobblestoney:loam"
                 }
-              ],
-              "name": "cobblestoney:loam"
+              ]
             }
           ]
         }

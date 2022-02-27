@@ -28,18 +28,25 @@
               "name": "cobblestoney:dirt_sand"
             },
             {
-              "type": "minecraft:item",
-              "functions": [
+              "type": "group",
+              "children": [
                 {
-                  "function": "minecraft:set_count",
-                  "count": 2.0,
-                  "add": false
+                  "type": "minecraft:item",
+                  "name": "cobblestoney:silt"
                 },
                 {
-                  "function": "minecraft:explosion_decay"
+                  "type": "minecraft:item",
+                  "name": "cobblestoney:silt"
+                },
+                {
+                  "type": "minecraft:item",
+                  "name": "minecraft:sand"
+                },
+                {
+                  "type": "minecraft:item",
+                  "name": "cobblestoney:loam"
                 }
-              ],
-              "name": "cobblestoney:loam"
+              ]
             }
           ]
         }

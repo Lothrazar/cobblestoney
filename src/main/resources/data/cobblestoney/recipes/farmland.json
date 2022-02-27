@@ -2,14 +2,13 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "minecraft:cobblestone"
+      "item": "minecraft:coarse_dirt"
     },
     {
       "item": "cobblestoney:mud"
     }
   ],
   "result": {
-    "item": "cobblestoney:stone_mud",
-    "count": 2
+    "item": "minecraft:farmland"
   }
 }

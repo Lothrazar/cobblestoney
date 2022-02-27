@@ -28,22 +28,29 @@
               "name": "cobblestoney:clay_silt"
             },
             {
-              "type": "minecraft:item",
-              "conditions": [
+              "type": "group",
+              "children": [
                 {
-                  "condition": "minecraft:survives_explosion"
-                }
-              ],
-              "name": "cobblestoney:silt"
-            },
-            {
-              "type": "minecraft:item",
-              "conditions": [
+                  "type": "minecraft:item",
+                  "name": "cobblestoney:silt"
+                },
                 {
-                  "condition": "minecraft:survives_explosion"
+                  "type": "minecraft:item",
+                  "name": "cobblestoney:loam"
+                },
+                {
+                  "type": "minecraft:item",
+                  "name": "cobblestoney:loam"
+                },
+                {
+                  "type": "minecraft:item",
+                  "name": "cobblestoney:loam"
+                },
+                {
+                  "type": "minecraft:item",
+                  "name": "minecraft:clay_ball"
                 }
-              ],
-              "name": "cobblestoney:loam"
+              ]
             }
           ]
         }
