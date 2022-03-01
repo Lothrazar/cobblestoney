@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smelting",
   "ingredient": {
-    "item": "cobblestoney:andesite_cobbled"
+    "tag": "forge:cobblestone/andesite"
   },
   "result": "minecraft:andesite",
   "experience": 0.1,

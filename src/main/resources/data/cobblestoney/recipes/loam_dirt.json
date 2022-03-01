@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "cobblestoney:coarse_dirt"
+      "item": "minecraft:coarse_dirt"
     },
     {
       "item": "cobblestoney:loam"

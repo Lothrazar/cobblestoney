@@ -13,11 +13,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-apply from: 'https://raw.githubusercontent.com/SizableShrimp/Forge-Class-Remapper/main/classremapper.gradle' 
-
 import net.minecraftforge.gradle.common.tasks.SignJar
-import groovy.json.JsonSlurper
-import groovy.json.JsonOutput
 
 version = "${mc_version}-${mod_version}"
 group = 'com.lothrazar.cobblestoney' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
@@ -93,8 +89,8 @@ dependencies {
    // runtimeOnly fg.deobf("vazkii.patchouli:Patchouli:${patchouli_version}")
   implementation fg.deobf("curse.maven:construction-wand-399558:3562331")
 
-  //  implementation fg.deobf("curse.maven:simple-storage-network-268495:3257204")
-  //  implementation fg.deobf("curse.maven:cyclic-239286:3249448")
+    implementation fg.deobf("curse.maven:plain-grinder-452000:3653027")
+    implementation fg.deobf("curse.maven:cyclic-239286:3661841")
   //  implementation fg.deobf("curse.maven:ctm-267602:3137659")
   //  implementation fg.deobf("curse.maven:storage-drawers-223852:3180569")
   //  implementation fg.deobf("curse.maven:refined-storage-243076:3157354")

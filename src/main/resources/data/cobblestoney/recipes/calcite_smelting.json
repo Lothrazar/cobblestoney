@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smelting",
   "ingredient": {
-    "item": "cobblestoney:calcite_cobbled"
+    "tag": "forge:cobblestone/calcite"
   },
   "result": "minecraft:calcite",
   "experience": 0.1,
