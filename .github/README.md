@@ -1,13 +1,10 @@
 
 
-A Template for Minecraft Forge mods [https://files.minecraftforge.net/](https://files.minecraftforge.net)
+https://www.curseforge.com/minecraft/mc-mods/cobblestoney
 
 
-Use the GitHub template button, or even better the copyTemplate.sh script
-
-
-[![](http://cf.way2muchnoise.eu/0.svg)](https://www.curseforge.com/minecraft/mc-mods/cobblestoney) 
-[![](http://cf.way2muchnoise.eu/versions/0.svg)](https://www.curseforge.com/minecraft/mc-mods/cobblestoney)
+[![](http://cf.way2muchnoise.eu/582368.svg)](https://www.curseforge.com/minecraft/mc-mods/cobblestoney) 
+[![](http://cf.way2muchnoise.eu/versions/582368.svg)](https://www.curseforge.com/minecraft/mc-mods/cobblestoney)
 
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
