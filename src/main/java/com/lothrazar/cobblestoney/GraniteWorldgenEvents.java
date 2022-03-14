@@ -16,12 +16,8 @@ public class GraniteWorldgenEvents {
 
   @SubscribeEvent(priority = EventPriority.HIGH)
   public void biomeLoadingEvent(BiomeLoadingEvent event) {
-    if (!ConfigManager.WORLDGEN_SOIL.get()) {
-      return;
-    }
     ResourceKey<Biome> key = ResourceKey.create(Registry.BIOME_REGISTRY, event.getName());
     if (BiomeDictionary.hasType(key, BiomeDictionary.Type.OVERWORLD)) {
-      //TODO if config for each
       BiomeGenerationSettingsBuilder builder = event.getGeneration();
       if (ConfigManager.WORLDGEN_COBBLED.get()) {
         builder.addFeature(GenerationStep.Decoration.LOCAL_MODIFICATIONS, FeatureRegistry.ORE_ANDESITE_LOWER);
