@@ -1,15 +1,14 @@
 package com.lothrazar.cobblestoney;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import com.lothrazar.cobblestoney.registry.BlockRegistry;
 import com.lothrazar.cobblestoney.registry.ConfigManager;
 import com.lothrazar.cobblestoney.registry.ItemRegistry;
-import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 @Mod(CobbleyMod.MODID)
 public class CobbleyMod {
@@ -25,8 +24,5 @@ public class CobbleyMod {
     FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
   }
 
-  private void setup(final FMLCommonSetupEvent event) {
-    MinecraftForge.EVENT_BUS.register(new GraniteWorldgenEvents());
-  }
-
+  private void setup(final FMLCommonSetupEvent event) {}
 }
