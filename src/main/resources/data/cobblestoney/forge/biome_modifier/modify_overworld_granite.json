@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": ["cobblestoney:ore_granite_cecilia","cobblestoney:ore_granite_jade","cobblestoney:ore_granite_pink","cobblestoney:ore_granite_purple","cobblestoney:ore_granite_red","cobblestoney:ore_granite_soladite"],
+  "step": "underground_ores"
+}

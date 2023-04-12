@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": ["cobblestoney:ore_andesite_cobbled","cobblestoney:ore_calcite_cobbled","cobblestoney:ore_diorite_cobbled","cobblestoney:ore_dripstone_cobbled","cobblestoney:ore_granite_cobbled","cobblestoney:ore_tuff_cobbled"],
+  "step": "underground_ores"
+}

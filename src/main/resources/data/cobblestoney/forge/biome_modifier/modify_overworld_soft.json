@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": ["cobblestoney:ore_clay_sand","cobblestoney:ore_clay_silt","cobblestoney:ore_dirt_clay","cobblestoney:ore_dirt_sand","cobblestoney:ore_stone_silt","cobblestoney:ore_stone_mud"],
+  "step": "underground_ores"
+}

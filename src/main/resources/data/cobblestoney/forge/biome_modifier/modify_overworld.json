@@ -1,6 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": "#minecraft:is_overworld",
-  "features": ["cobblestoney:ore_granite_cecilia","cobblestoney:ore_calcite_cobbled"],
-  "step": "underground_ores"
-}
