@@ -1,6 +1,6 @@
 package com.lothrazar.cobblestoney.registry;
 
-import com.lothrazar.cobblestoney.CobbleyMod;
+import com.lothrazar.cobblestoney.ModCobbley;
 import com.lothrazar.library.block.BlockFlib;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
@@ -14,7 +14,7 @@ import net.minecraftforge.registries.RegistryObject;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class BlockRegistry {
 
-  public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, CobbleyMod.MODID);
+  public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, ModCobbley.MODID);
   public static final RegistryObject<Block> DRIPSTONE_COBBLED = BLOCKS.register("dripstone_cobbled", () -> new BlockFlib(Block.Properties.of(Material.STONE, MaterialColor.TERRACOTTA_BROWN).sound(SoundType.DRIPSTONE_BLOCK).requiresCorrectToolForDrops().strength(1.5F, 1.0F)));
   public static final RegistryObject<Block> CALCITE_COBBLED = BLOCKS.register("calcite_cobbled", () -> new BlockFlib(Block.Properties.of(Material.STONE, MaterialColor.COLOR_LIGHT_GRAY).sound(SoundType.CALCITE).requiresCorrectToolForDrops().strength(0.75F)));
   public static final RegistryObject<Block> TUFF_COBBLED = BLOCKS.register("tuff_cobbled", () -> new BlockFlib(Block.Properties.of(Material.STONE, MaterialColor.COLOR_GRAY).sound(SoundType.TUFF).requiresCorrectToolForDrops().strength(1.5F, 6.0F)));
