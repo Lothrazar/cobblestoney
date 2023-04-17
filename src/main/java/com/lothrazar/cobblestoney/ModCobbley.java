@@ -19,7 +19,7 @@ public class ModCobbley {
     IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
     BlockRegistry.BLOCKS.register(eventBus);
     ItemRegistry.ITEMS.register(eventBus);
-    ConfigRegistryCobbley.setup();
+    new ConfigRegistryCobbley();
   }
   //worldgen defaults:
   //most are everywhere (zero above_bottom and below_top
