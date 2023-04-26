@@ -16,10 +16,10 @@ public class ModCobbley {
   public static final Logger LOGGER = LogManager.getLogger();
 
   public ModCobbley() {
-    IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
-    BlockRegistry.BLOCKS.register(eventBus);
-    ItemRegistry.ITEMS.register(eventBus);
     new ConfigRegistryCobbley();
+    IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+    BlockRegistry.BLOCKS.register(bus);
+    ItemRegistry.ITEMS.register(bus);
   }
   //worldgen defaults:
   //most are everywhere (zero above_bottom and below_top
