@@ -1,26 +1,47 @@
 package com.lothrazar.cobblestoney.registry;
-
+ 
 import com.lothrazar.cobblestoney.ModCobbley;
 import com.lothrazar.library.item.BlockItemFlib;
 import com.lothrazar.library.item.ItemFlib;
-import com.lothrazar.library.registry.RegistryFactory;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
-import net.minecraftforge.event.CreativeModeTabEvent;
+import net.minecraft.world.item.ItemStack; 
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.RegisterEvent;
 import net.minecraftforge.registries.RegistryObject;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ItemRegistry {
 
+  private static final ResourceKey<CreativeModeTab> TAB = ResourceKey.create(Registries.CREATIVE_MODE_TAB, new ResourceLocation(ModCobbley.MODID, "tab"));
   public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, ModCobbley.MODID);
-
   @SubscribeEvent
-  public static void buildContents(CreativeModeTabEvent.Register event) {
-    RegistryFactory.buildTab(event, ModCobbley.MODID, GRANITE_JADE.get().asItem(), ITEMS);
-  }
+  public static void onCreativeModeTabRegister(RegisterEvent event) {
+    event.register(Registries.CREATIVE_MODE_TAB, helper -> {
+      helper.register(TAB, CreativeModeTab.builder().icon(() -> new ItemStack( GRANITE_JADE.get().asItem()))
+          .title(Component.translatable("itemGroup." + ModCobbley.MODID))
+          .displayItems((enabledFlags, populator) -> {
+            for (RegistryObject<Item> entry : ITEMS.getEntries()) {
+              populator.accept(entry.get());
+            }
+          }).build());
+    });
+    //    event.registerCreativeModeTab(new ResourceLocation(ModMain.MODID, "tab"), builder -> builder
+    //        .title(Component.translatable("itemGroup." + ModMain.MODID))
+    //        .icon(() -> new ItemStack(DOOR_STONE))
+    //        .displayItems((enabledFlags, populator) -> {
+    //          for (Block b : BLOCKLIST) {
+    //            populator.accept(new ItemStack(b));
+    //          }
+    //        }));
+  } 
 
   public static final RegistryObject<Item> SILT = ITEMS.register("silt", () -> new ItemFlib(new Item.Properties()));
   public static final RegistryObject<Item> LOAM = ITEMS.register("loam", () -> new ItemFlib(new Item.Properties()));
