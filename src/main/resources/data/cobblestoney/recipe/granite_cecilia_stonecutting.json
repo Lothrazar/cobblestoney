@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "cobblestoney:granite_cecilia"
+  },
+  "result": {"id": "minecraft:granite", "count": 1}
+}

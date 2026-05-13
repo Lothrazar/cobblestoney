@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "cobblestoney:granite_red"
+  },
+  "result": {"id": "minecraft:granite", "count": 1}
+}

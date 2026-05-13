@@ -5,9 +5,8 @@ import org.apache.logging.log4j.Logger;
 import com.lothrazar.cobblestoney.registry.BlockRegistry;
 import com.lothrazar.cobblestoney.registry.ConfigRegistryCobbley;
 import com.lothrazar.cobblestoney.registry.ItemRegistry;
-import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.fml.common.Mod;
 
 @Mod(ModCobbley.MODID)
 public class ModCobbley {
@@ -15,11 +14,11 @@ public class ModCobbley {
   public static final String MODID = "cobblestoney";
   public static final Logger LOGGER = LogManager.getLogger();
 
-  public ModCobbley() {
+  public ModCobbley(IEventBus modEventBus) {
     new ConfigRegistryCobbley();
-    IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-    BlockRegistry.BLOCKS.register(bus);
-    ItemRegistry.ITEMS.register(bus);
+    BlockRegistry.BLOCKS.register(modEventBus);
+    ItemRegistry.ITEMS.register(modEventBus);
+    ItemRegistry.CREATIVE_MODE_TABS.register(modEventBus);
   }
   //worldgen defaults:
   //most are everywhere (zero above_bottom and below_top

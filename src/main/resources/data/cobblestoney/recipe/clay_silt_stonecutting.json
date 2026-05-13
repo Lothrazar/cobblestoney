@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "cobblestoney:clay_silt"
+  },
+  "result": {"id": "cobblestoney:silt", "count": 1}
+}

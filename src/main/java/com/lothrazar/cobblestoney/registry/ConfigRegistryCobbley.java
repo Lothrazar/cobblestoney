@@ -1,21 +1,17 @@
 package com.lothrazar.cobblestoney.registry;
 
 import com.lothrazar.cobblestoney.ModCobbley;
-import com.lothrazar.library.config.ConfigTemplate;
-import net.minecraftforge.common.ForgeConfigSpec;
+import net.neoforged.neoforge.common.ModConfigSpec;
 
-public class ConfigRegistryCobbley extends ConfigTemplate {
+public class ConfigRegistryCobbley {
 
-  private static final ForgeConfigSpec CONFIG;
+  public static final ModConfigSpec CONFIG;
   static {
-    final ForgeConfigSpec.Builder BUILDER = builder();
+    final ModConfigSpec.Builder BUILDER = new ModConfigSpec.Builder();
     BUILDER.comment("[" + ModCobbley.MODID + "] Worldgen settings have moved to mojang datapack system").push(ModCobbley.MODID);
     BUILDER.define("_comment", "All worldgen controls have been moved to the mojang datapack system instead of configs.  See built-in json files inside /data/cobblestoney/worldgen/ ");
     BUILDER.pop(); // one pop for every push
     CONFIG = BUILDER.build();
   }
 
-  public ConfigRegistryCobbley() {
-    CONFIG.setConfig(setup(ModCobbley.MODID));
-  }
 }
