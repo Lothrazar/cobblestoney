@@ -3,7 +3,7 @@ bin
 *.launch
 .settings
 .metadata
-.classpath
+.cla*
 .project
 
 # idea
@@ -16,10 +16,10 @@ out
 # gradle
 build
 .gradle
-libs
+deploy.properties
+
 # other
 run
 logs
-
-# Files from Forge MDK
-forge*changelog.txt
+libs
+repo
