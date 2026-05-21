@@ -11,7 +11,7 @@
     "item": "cobblestoney:diorite_cobbled",
     "count": 1
   },
-  "conditions": [
+  "neoforge:conditions": [
     {
       "values": [
         {

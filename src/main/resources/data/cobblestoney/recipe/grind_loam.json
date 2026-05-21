@@ -7,7 +7,7 @@
     "item": "cobblestoney:loam",
     "count": 1
   },
-  "conditions": [
+  "neoforge:conditions": [
     {
       "values": [
         {

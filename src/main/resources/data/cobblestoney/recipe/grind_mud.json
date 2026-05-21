@@ -7,7 +7,7 @@
     "item": "cobblestoney:mud",
     "count": 1
   },
-  "conditions": [
+  "neoforge:conditions": [
     {
       "values": [
         {
