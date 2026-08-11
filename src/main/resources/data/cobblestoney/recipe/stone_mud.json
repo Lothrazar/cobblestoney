@@ -1,12 +1,8 @@
 {
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
-    {
-      "item": "minecraft:cobblestone"
-    },
-    {
-      "item": "cobblestoney:mud"
-    }
+    "minecraft:cobblestone",
+    "cobblestoney:mud"
   ],
   "result": {
     "id": "cobblestoney:stone_mud",

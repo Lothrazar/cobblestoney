@@ -1,7 +1,8 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "cobblestoney:clay_sand"
-  },
-  "result": {"id": "minecraft:clay_ball", "count": 1}
+  "ingredient": "cobblestoney:clay_sand",
+  "result": {
+    "id": "minecraft:clay_ball",
+    "count": 1
+  }
 }

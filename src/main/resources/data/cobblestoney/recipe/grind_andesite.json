@@ -1,8 +1,6 @@
 {
   "type": "plaingrinder:grinder",
-  "input": {
-    "item": "minecraft:andesite"
-  },
+  "input": "minecraft:andesite",
   "result": {
     "item": "cobblestoney:andesite_cobbled",
     "count": 1

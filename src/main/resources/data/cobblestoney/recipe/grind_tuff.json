@@ -1,8 +1,6 @@
 {
   "type": "plaingrinder:grinder",
-  "input": {
-    "item": "minecraft:tuff"
-  },
+  "input": "minecraft:tuff",
   "result": {
     "item": "cobblestoney:tuff_cobbled",
     "count": 1

@@ -1,8 +1,6 @@
 {
   "type": "cyclic:crusher",
-  "input": {
-    "item": "minecraft:tuff"
-  },
+  "input": "minecraft:tuff",
   "energy": {
     "ticks": 60,
     "rfpertick": 20

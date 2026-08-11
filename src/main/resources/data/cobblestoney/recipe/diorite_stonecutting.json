@@ -1,7 +1,8 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "cobblestoney:diorite_cobbled"
-  },
-  "result": {"id": "minecraft:diorite", "count": 1}
+  "ingredient": "cobblestoney:diorite_cobbled",
+  "result": {
+    "id": "minecraft:diorite",
+    "count": 1
+  }
 }

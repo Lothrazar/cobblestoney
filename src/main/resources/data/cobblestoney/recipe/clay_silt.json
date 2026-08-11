@@ -5,12 +5,8 @@
     "GD"
   ],
   "key": {
-    "D": {
-      "item": "cobblestoney:silt"
-    },
-    "G": {
-      "item": "minecraft:clay_ball"
-    }
+    "D": "cobblestoney:silt",
+    "G": "minecraft:clay_ball"
   },
   "result": {
     "id": "cobblestoney:clay_silt",

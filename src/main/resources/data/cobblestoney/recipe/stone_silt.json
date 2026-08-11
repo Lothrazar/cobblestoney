@@ -1,12 +1,8 @@
 {
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
-    {
-      "item": "minecraft:cobblestone"
-    },
-    {
-      "item": "cobblestoney:silt"
-    }
+    "minecraft:cobblestone",
+    "cobblestoney:silt"
   ],
   "result": {
     "id": "cobblestoney:stone_silt",

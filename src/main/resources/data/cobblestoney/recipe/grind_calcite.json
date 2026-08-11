@@ -1,8 +1,6 @@
 {
   "type": "plaingrinder:grinder",
-  "input": {
-    "item": "minecraft:calcite"
-  },
+  "input": "minecraft:calcite",
   "result": {
     "item": "cobblestoney:calcite_cobbled",
     "count": 1

@@ -1,9 +1,9 @@
 {
   "type": "minecraft:campfire_cooking",
-  "ingredient": {
-    "item": "cobblestoney:granite_jade"
+  "ingredient": "cobblestoney:granite_jade",
+  "result": {
+    "id": "minecraft:lime_dye"
   },
-  "result": {"id": "minecraft:lime_dye"},
   "experience": 0.08,
   "cookingtime": 1200
 }

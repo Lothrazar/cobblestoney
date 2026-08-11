@@ -1,18 +1,10 @@
 {
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
-    {
-      "item": "cobblestoney:loam"
-    },
-    {
-      "item": "cobblestoney:loam"
-    },
-    {
-      "item": "cobblestoney:silt"
-    },
-    {
-      "item": "cobblestoney:mud"
-    }
+    "cobblestoney:loam",
+    "cobblestoney:loam",
+    "cobblestoney:silt",
+    "cobblestoney:mud"
   ],
   "result": {
     "id": "minecraft:clay_ball"

@@ -1,8 +1,6 @@
 {
   "type": "plaingrinder:grinder",
-  "input": {
-    "item": "minecraft:granite"
-  },
+  "input": "minecraft:granite",
   "result": {
     "item": "cobblestoney:granite_cobbled",
     "count": 1

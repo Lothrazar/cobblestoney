@@ -5,12 +5,8 @@
     "GD"
   ],
   "key": {
-    "D": {
-      "item": "cobblestoney:mud"
-    },
-    "G": {
-      "item": "minecraft:gravel"
-    }
+    "D": "cobblestoney:mud",
+    "G": "minecraft:gravel"
   },
   "result": {
     "id": "minecraft:coarse_dirt",

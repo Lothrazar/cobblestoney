@@ -1,18 +1,10 @@
 {
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
-    {
-      "item": "cobblestoney:silt"
-    },
-    {
-      "item": "cobblestoney:mud"
-    },
-    {
-      "item": "cobblestoney:mud"
-    },
-    {
-      "item": "cobblestoney:mud"
-    }
+    "cobblestoney:silt",
+    "cobblestoney:mud",
+    "cobblestoney:mud",
+    "cobblestoney:mud"
   ],
   "result": {
     "id": "minecraft:dirt"

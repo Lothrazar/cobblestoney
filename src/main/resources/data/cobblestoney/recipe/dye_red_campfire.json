@@ -1,9 +1,9 @@
 {
   "type": "minecraft:campfire_cooking",
-  "ingredient": {
-    "item": "cobblestoney:granite_red"
+  "ingredient": "cobblestoney:granite_red",
+  "result": {
+    "id": "minecraft:red_dye"
   },
-  "result": {"id": "minecraft:red_dye"},
   "experience": 0.08,
   "cookingtime": 1200
 }

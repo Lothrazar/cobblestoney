@@ -1,8 +1,6 @@
 {
   "type": "plaingrinder:grinder",
-  "input": {
-    "item": "cobblestoney:stone_mud"
-  },
+  "input": "cobblestoney:stone_mud",
   "result": {
     "item": "cobblestoney:mud",
     "count": 1

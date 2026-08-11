@@ -1,9 +1,9 @@
 {
   "type": "minecraft:campfire_cooking",
-  "ingredient": {
-    "item": "cobblestoney:granite_cecilia"
+  "ingredient": "cobblestoney:granite_cecilia",
+  "result": {
+    "id": "minecraft:yellow_dye"
   },
-  "result": {"id": "minecraft:yellow_dye"},
   "experience": 0.08,
   "cookingtime": 1800
 }

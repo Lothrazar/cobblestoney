@@ -1,7 +1,8 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "cobblestoney:stone_mud"
-  },
-  "result": {"id": "minecraft:cobblestone", "count": 1}
+  "ingredient": "cobblestoney:stone_mud",
+  "result": {
+    "id": "minecraft:cobblestone",
+    "count": 1
+  }
 }

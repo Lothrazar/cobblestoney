@@ -1,8 +1,6 @@
 {
   "type": "plaingrinder:grinder",
-  "input": {
-    "item": "minecraft:diorite"
-  },
+  "input": "minecraft:diorite",
   "result": {
     "item": "cobblestoney:diorite_cobbled",
     "count": 1
